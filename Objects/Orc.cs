@@ -1,5 +1,6 @@
 using System;
 
+// Orc explanation is same as Human explanation
 public class Orc : Races{
   public string Name { get; set; }
   public Orc(string name){

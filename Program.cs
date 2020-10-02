@@ -18,7 +18,7 @@ namespace SmallGame
         // Instantiate Random to decide the skill casting.
         static Random rng = new Random();
 
-        // Don't mind the syntax. This will just call the DecideTurn() 
+        // Don't mind the syntax. This will just call the DecideTurn() and start the whole program.
         static void Main() => DecideTurn();
 
         // Function the check if game is over or not
@@ -36,7 +36,8 @@ namespace SmallGame
                 Console.WriteLine($"{human.Name} Win!");
                 return;
             }
-            Console.WriteLine("Human Turn");
+
+            Console.WriteLine($"{human.Name}'s Turn");
 
             // Initialize the random number from 0 to 100
             int rand = rng.Next(0, 101);
@@ -68,7 +69,7 @@ namespace SmallGame
                 Console.WriteLine($"{orc.Name} Win!");
                 return;
             }
-            Console.WriteLine("Orc Turn");
+            Console.WriteLine($"{orc.Name}'s Turn");
             int rand = rng.Next(0, 101);
             if(rand > 80)
             {

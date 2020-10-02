@@ -38,7 +38,7 @@ namespace SmallGame
             }
             Console.WriteLine("Human Turn");
 
-            // Initialize the random number
+            // Initialize the random number from 0 to 100
             int rand = rng.Next(0, 101);
 
             // The casting chance of super skill is 20% and 80 % for basic skill.
